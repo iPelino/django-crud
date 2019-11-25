@@ -8,10 +8,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Test Page</title>
+    <title>Student Registration</title>
   </head>
   <body>
-    <h1>Test Page with Bootstrap</h1>
+    
+    <div class="container">
+        <form method="post">
+          {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-success" type="submit">Register</button>
+        </form>
+    </div>
 
     <a href="{% url 'home' %}">Go Back to Home Page</a>
 

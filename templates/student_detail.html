@@ -8,10 +8,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Test Page</title>
+    <title>Student Registration</title>
   </head>
   <body>
-    <h1>Test Page with Bootstrap</h1>
+    
+    <div class="container">
+        
+        {{student.reg_number}} <br>
+        {{student.first_name}}<br>
+        {{student.last_name}}<br>
+        {{student.age}}<br>
+        {{student.email}}<br>
+       
+            
+    </div>
 
     <a href="{% url 'home' %}">Go Back to Home Page</a>
 
